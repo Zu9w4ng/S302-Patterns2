@@ -4,9 +4,7 @@ public class App
 {
     public static void main( String[] args )
     {
-    	Shop shop = new Shop("Sabates Marc");
-    	PaymentManager manager = new PaymentManager();
-    	
-    	manager.payment(shop, 54);
+    	Shop shop = new Shop("Sabates Marc", new PaymentManager());
+    	shop.transaction(54);
     }
 }
