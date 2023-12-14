@@ -33,7 +33,7 @@ public class Shop
 
 	public void transaction(int quantity)
 	{
-		String method = paymentManager.payment(quantity);
+		String method = paymentManager.payment();
 		System.out.println("La botiga " + name + " ha venut productes per valor de "
 				+ quantity + " euros, i tal quantitat s'ha pagat amb " + method);
 	}

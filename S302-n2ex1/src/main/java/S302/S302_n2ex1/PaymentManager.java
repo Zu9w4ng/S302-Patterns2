@@ -6,7 +6,7 @@ public class PaymentManager
 		return Input.readString("Introdueix la forma de pagament");
 	};
 	
-	public String payment(int quantity)
+	public String payment()
 	{
 		return callback.method();
 	}
